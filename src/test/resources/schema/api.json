@@ -1,0 +1,559 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "ExtraCare Dashboard Api",
+    "description": "Service Specification for ExtraCare Dashboard Service",
+    "version": "1.1"
+  },
+  "servers": [
+    {
+      "url": "https://dashboard-dev1.crmapitest.cvshealthcloud.com",
+      "description": "Generated server url"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Dashboard",
+      "description": "ExtraCare Dashboard API"
+    }
+  ],
+  "paths": {
+    "/api/v{major_ver_id}.{minor_ver_id}/customers/{search_card_type}.{search_card_nbr}/dashboards": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "summary": "GetCustomerRewardSummary",
+        "description": "Get ExtraCard Rewards Summary",
+        "operationId": "getCustomerRewardSummary",
+        "parameters": [
+          {
+            "name": "major_ver_id",
+            "in": "path",
+            "description": "Major Version Id",
+            "required": true,
+            "schema": {
+              "maximum": 1,
+              "minimum": 1,
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "minor_ver_id",
+            "in": "path",
+            "description": "Minor Version Id",
+            "required": true,
+            "schema": {
+              "maximum": 1,
+              "minimum": 1,
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "search_card_type",
+            "in": "path",
+            "description": "Search card type (xtraCard - 0002,encodedCard - 0004, maskedCard - 0006)",
+            "required": true,
+            "schema": {
+              "maxLength": 4,
+              "minLength": 4,
+              "type": "string"
+            }
+          },
+          {
+            "name": "search_card_nbr",
+            "in": "path",
+            "description": "Search card number",
+            "required": true,
+            "schema": {
+              "maxLength": 15,
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          {
+            "name": "msg_src_cd",
+            "in": "query",
+            "description": "Consumer specific version identifier for Source System (W-Web , M-Mobile)",
+            "required": true,
+            "schema": {
+              "maxLength": 1,
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          {
+            "name": "src_loc_cd",
+            "in": "query",
+            "description": "Consumer specific version identifier for Source location (2695-web-direct, mobile-90042)",
+            "required": true,
+            "schema": {
+              "maxLength": 5,
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          {
+            "name": "user_id",
+            "in": "query",
+            "description": "Security identifier or User Id making the change (web - CVS.COM, Mobile - MOBILE_ENT)",
+            "required": true,
+            "schema": {
+              "maxLength": 15,
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          {
+            "name": "channel",
+            "in": "query",
+            "description": "Consumer specific version identifier for Channel (Digital_Mobile, Digital_Web)",
+            "required": false,
+            "schema": {
+              "maxLength": 15,
+              "minLength": 1,
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DashboardResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "BeautyClub": {
+        "type": "object",
+        "properties": {
+          "enrolled": {
+            "type": "boolean",
+            "description": "Has the customer erolled into Beauty club?",
+            "example": true
+          },
+          "campaignId": {
+            "type": "integer",
+            "description": "Campaign Id",
+            "format": "int32",
+            "example": 59727
+          },
+          "webDescription": {
+            "type": "string",
+            "description": "Web Description",
+            "example": "$3 ExtraBucks Rewards when you spend $30 on beauty"
+          },
+          "campaignEndDate": {
+            "type": "string",
+            "description": "Campaign End Date",
+            "format": "date",
+            "example": "2020-12-31"
+          },
+          "thresholdTypeCode": {
+            "type": "string",
+            "description": "Threshold Type Code",
+            "example": "D"
+          },
+          "firstThreshold": {
+            "type": "number",
+            "description": "Threshold Limit Number",
+            "format": "double",
+            "example": 30
+          },
+          "rewardAmount": {
+            "type": "number",
+            "description": "Reward amount to be issued when threshold is reached",
+            "format": "double",
+            "example": 3
+          },
+          "pointsToNextThreshold": {
+            "type": "number",
+            "description": "Points to Next Threshold",
+            "format": "double",
+            "example": 25.43
+          },
+          "offerLimitReached": {
+            "type": "boolean",
+            "description": "Offer Limit Reached Indicator",
+            "example": false
+          },
+          "pointsProgress": {
+            "type": "number",
+            "description": "Points Progress",
+            "format": "double",
+            "example": 4.57
+          }
+        },
+        "description": "Customer's Beauty Club summary"
+      },
+      "Carepass": {
+        "type": "object",
+        "properties": {
+          "rewardNextIssueDaysCount": {
+            "type": "integer",
+            "description": "Days left to issue the next carepass reward, only sent if customer is eligible to get next reward",
+            "format": "int32",
+            "example": 5
+          },
+          "statusCode": {
+            "type": "string",
+            "description": "Enrollment status code",
+            "example": "E - Enrolled, U - Unenrolled, H - Hold, CI - Cancellation Initiated"
+          },
+          "expiryDate": {
+            "type": "string",
+            "description": "Current $10 coupon expiry date, only sent when the coupon is available",
+            "example": "2020-07-01"
+          },
+          "couponSequenceNumber": {
+            "type": "integer",
+            "description": "Coupon sequence number of the carepass coupon, only sent when coupon is available",
+            "format": "int64",
+            "example": 10000000671356
+          }
+        },
+        "description": "Carepass membership details"
+      },
+      "DashboardResponse": {
+        "type": "object",
+        "properties": {
+          "carepass": {
+            "$ref": "#/components/schemas/Carepass"
+          },
+          "beautyClub": {
+            "$ref": "#/components/schemas/BeautyClub"
+          },
+          "dealsInProgress": {
+            "type": "array",
+            "description": "Customer's Other deals which are in progress",
+            "items": {
+              "$ref": "#/components/schemas/DealInProgress"
+            }
+          },
+          "errorCd": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "errorMsg": {
+            "type": "string"
+          },
+          "extraCareCardSummary": {
+            "$ref": "#/components/schemas/XtraCardSummary"
+          },
+          "quarterlyExtraBucks": {
+            "$ref": "#/components/schemas/Qeb"
+          },
+          "pharmacyHealthRewards": {
+            "$ref": "#/components/schemas/Phr"
+          }
+        },
+        "description": "Dashboard API response"
+      },
+      "DealInProgress": {
+        "type": "object",
+        "properties": {
+          "campaignId": {
+            "type": "integer",
+            "description": "Campaign Id",
+            "format": "int32",
+            "example": 66310
+          },
+          "webDescription": {
+            "type": "string",
+            "description": "Web Description",
+            "example": "$4 ExtraBucks Rewards for spending $15 on CVS Health Foot Care"
+          },
+          "campaignEndDate": {
+            "type": "string",
+            "description": "Campaign End Date",
+            "format": "date",
+            "example": "2020-07-04"
+          },
+          "thresholdTypeCode": {
+            "type": "string",
+            "description": "Threshold Type Code",
+            "example": "D"
+          },
+          "firstThreshold": {
+            "type": "number",
+            "description": "Threshold Limit Number",
+            "format": "double",
+            "example": 15
+          },
+          "rewardAmount": {
+            "type": "number",
+            "description": "Reward amount to be issued when threshold is reached",
+            "format": "double",
+            "example": 5
+          },
+          "pointsToNextThreshold": {
+            "type": "number",
+            "description": "Points to Next Threshold",
+            "format": "double",
+            "example": 25.43
+          },
+          "offerLimitReached": {
+            "type": "boolean",
+            "description": "Offer Limit Reached Indicator",
+            "example": false
+          },
+          "campaignTypeCode": {
+            "type": "string",
+            "description": "Campaign Type code",
+            "example": "I"
+          },
+          "campaignSubtypeCode": {
+            "type": "string",
+            "description": "Campaign Subtype code",
+            "example": "C"
+          },
+          "pointsQuantity": {
+            "type": "number",
+            "description": "Points Quantity",
+            "format": "double",
+            "example": 2
+          },
+          "couponSourceCode": {
+            "type": "string",
+            "description": "Coupon source cd",
+            "example": "QU"
+          }
+        },
+        "description": "Customer's Other deals which are in progress"
+      },
+      "Member": {
+        "type": "object",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "description": "Phr Member's first name",
+            "example": "John"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Phr Member's last name",
+            "example": "Doe"
+          }
+        },
+        "description": "PHR Family members details"
+      },
+      "Phr": {
+        "type": "object",
+        "properties": {
+          "enrolled": {
+            "type": "boolean",
+            "description": "Has the customer erolled into Beauty club?",
+            "example": true
+          },
+          "members": {
+            "type": "array",
+            "description": "List of Phr Members",
+            "items": {
+              "$ref": "#/components/schemas/Member"
+            }
+          },
+          "campaignId": {
+            "type": "integer",
+            "description": "Campaign Id",
+            "format": "int32",
+            "example": 59726
+          },
+          "webDescription": {
+            "type": "string",
+            "description": "Web Description",
+            "example": "$5 Pharmacy and Health ExtraBucks Rewards"
+          },
+          "campaignEndDate": {
+            "type": "string",
+            "description": "Campaign End Date",
+            "format": "date",
+            "example": "2020-12-31"
+          },
+          "thresholdTypeCode": {
+            "type": "string",
+            "description": "Threshold Type Code",
+            "example": "Q"
+          },
+          "firstThreshold": {
+            "type": "number",
+            "description": "Threshold Limit Number",
+            "format": "double",
+            "example": 10
+          },
+          "rewardAmount": {
+            "type": "number",
+            "description": "Reward amount to be issued when threshold is reached",
+            "format": "double",
+            "example": 5
+          },
+          "pointsToNextThreshold": {
+            "type": "number",
+            "description": "Points to Next Threshold",
+            "format": "double",
+            "example": 8
+          },
+          "offerLimitReached": {
+            "type": "boolean",
+            "description": "Offer Limit Reached Indicator",
+            "example": false
+          },
+          "pointsProgress": {
+            "type": "number",
+            "description": "Points Progress",
+            "format": "double",
+            "example": 2
+          }
+        },
+        "description": "Customer's Pharmacy Healthy Rewards summary"
+      },
+      "Qeb": {
+        "type": "object",
+        "properties": {
+          "campaignId": {
+            "type": "integer",
+            "description": "Campaign Id",
+            "format": "int32",
+            "example": 64039
+          },
+          "webDescription": {
+            "type": "string",
+            "description": "Web Description",
+            "example": "Spring 2020 Spending"
+          },
+          "campaignEndDate": {
+            "type": "string",
+            "description": "Campaign End Date",
+            "format": "date",
+            "example": "2020-06-15"
+          },
+          "thresholdTypeCode": {
+            "type": "string",
+            "description": "Threshold Type Code",
+            "example": "D"
+          },
+          "firstThreshold": {
+            "type": "number",
+            "description": "Threshold Limit Number",
+            "format": "double",
+            "example": 50
+          },
+          "rewardAmount": {
+            "type": "number",
+            "description": "Reward amount to be issued when threshold is reached",
+            "format": "double",
+            "example": 1
+          },
+          "pointsToNextThreshold": {
+            "type": "number",
+            "description": "Points to Next Threshold",
+            "format": "double",
+            "example": 25.43
+          },
+          "offerLimitReached": {
+            "type": "boolean",
+            "description": "Offer Limit Reached Indicator",
+            "example": false
+          },
+          "extrabuckRewardsEarned": {
+            "type": "number",
+            "description": "Total Extra bucks earned till date",
+            "format": "double",
+            "example": 4.57
+          },
+          "couponIssueDt": {
+            "type": "string",
+            "description": "Coupon Issue Date",
+            "format": "date",
+            "example": "2020-07-01"
+          },
+          "pointsProgress": {
+            "type": "number",
+            "description": "Points Progress",
+            "format": "double",
+            "example": 26.5
+          }
+        },
+        "description": "Customer's Quarterly Extra Bucks summary"
+      },
+      "XtraCardSummary": {
+        "type": "object",
+        "properties": {
+          "totalYearToDateSaving": {
+            "type": "number",
+            "description": "Total Year to date save amount",
+            "format": "double",
+            "example": 1222.41
+          },
+          "totalLifetimeSaving": {
+            "type": "number",
+            "description": "Lifetime Savings Amount",
+            "format": "double",
+            "example": 2222.41
+          },
+          "availableExtraBucks": {
+            "type": "number",
+            "description": "Available Extra Bucks",
+            "format": "double",
+            "example": 10.5
+          },
+          "cardMemberSince": {
+            "type": "string",
+            "description": "Card Member Date",
+            "format": "date",
+            "example": "2015-11-21"
+          },
+          "yearToDateStartDate": {
+            "type": "string",
+            "description": "Year to Date Savings Start Date",
+            "format": "date",
+            "example": "2020-01-01"
+          }
+        },
+        "description": "Extra Card Customer Summary"
+      },
+      "ApiErrorResponse": {
+        "type": "object",
+        "properties": {
+          "errorCd": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "errorMsg": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

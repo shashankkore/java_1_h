@@ -1,0 +1,914 @@
+{
+		"initial_request_body": [
+			{
+				"tables": [
+					{
+						"name": "CUSTOMER",
+						"rows": [
+							{
+								"action": "INSERT",
+								"colData": {
+									
+								}
+							}
+						]
+					}
+				]
+			}
+		],
+		"main_customer_create_onerecord_each": [
+			{
+				"custId": "933311469",
+				"gndrCd": "M",
+				"firstName": "Anurag",
+				"middleInitialTxt": "R",
+				"lastName": "Reddy",
+				"surName": "JR",
+				"pfxTxt": "MR",
+				"birthDt": "2021-NOV-12",
+				"ssn": "123456789",
+				"lastUpdtSrcCd": "050",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc01AutoTest",
+				"addresses": [
+					{
+						"custId": "933311469",
+						"addrTypeCd": "H",
+						"addrPrefSeqNbr": "1",
+						"addr1Txt": "123 Ranger St tc01",
+						"cityName": "Austin",
+						"stCd": "TX",
+						"zipCd": "78388",
+						"lastUpdtSrcCd": "050",
+						"lastUpdtDt": "SYSDATE",
+						"lastUpdtById": "tc01AutoTest"
+					}
+				],
+				"phone": [
+					{
+						"entryMethodCd": "1",
+						"phonePrefSeqNbr": "3",
+						"phoneTypeCd": "U",
+						"phoneAreaCdNbr": "888",
+						"phonePfxNbr": "111",
+						"phoneSfxNbr": "3344",
+						"lastUpdtSrcCd": "050",
+						"lastUpdtDt": "SYSDATE",
+						"lastUpdtById": "tc01AutoTest"
+					}
+				],
+				"email": [
+					{
+						"emailPrefSeqNbr": "1",
+						"emailAddrTypeCd": "W",
+						"emailAddrTxt": "anuragreddy_tc01@icloud.com",
+						"emailStatusCd": "Y",
+						"lastUpdtSrcCd": "050",
+						"lastUpdtById": "tc01AutoTest",
+						"lastUpdtDt": "SYSDATE"
+					}
+				],
+				"opt": [
+					{
+						"optTypeCd": "32",
+						"optCd": "O",
+						"optSrcCd": "C",
+						"lastUpdtSrcCd": "050",
+						"lastUpdtDt": "sysdate",
+						"lastUpdtById": "tc01AutoTest"
+					}
+				],
+				"selectCat": [
+					{
+						"selectCatSeqNbr": "1",
+						"selectCatNbr": "1"
+					}
+				],
+				"xtraCustomer": [
+					{
+						"recruiteCriteriaCd": "F",
+						"hhNbr": "178362777",
+						"headOfHHInd": "F",
+						"custStatCd": "Y",
+						"custStatUpdtDt": "2021-SEP-12",
+						"custFavCatNbr": "1",
+						"custFavWiCd": "5",
+						"hhCnt": "5"
+					}
+				],
+				"xtraCardNbr": 8875522,
+				"encodedXtraCardNbr": 4872887552211,
+				"xcChildBirthDate": "1994-NOV-12",
+				"wellNessInfoCd": "2"
+			}
+		],
+		"main_create_customer_multiple_records": [
+			{
+				"custId": "933311469",
+				"gndrCd": "M",
+				"firstName": "Anurag",
+				"middleInitialTxt": "R",
+				"lastName": "Reddy",
+				"surName": "JR",
+				"pfxTxt": "MR",
+				"birthDt": "2021-NOV-12",
+				"ssn": "123456789",
+				"lastUpdtSrcCd": "050",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "EMP1",
+				"addresses": [
+					{
+						"custId": "933311469",
+						"addrTypeCd": "H",
+						"addrPrefSeqNbr": "1",
+						"addr1Txt": "123 Ranger St",
+						"cityName": "Austin",
+						"stCd": "TX",
+						"zipCd": "78388",
+						"lastUpdtSrcCd": "050",
+						"lastUpdtDt": "SYSDATE",
+						"lastUpdtById": "EMP2"
+					},
+					{
+						"custId": "933311469",
+						"addrTypeCd": "U",
+						"addrPrefSeqNbr": "2",
+						"addr1Txt": "789 81st Street",
+						"cityName": "Miami",
+						"stCd": "FL",
+						"zipCd": "33188",
+						"lastUpdtSrcCd": "050",
+						"lastUpdtDt": "SYSDATE",
+						"lastUpdtById": "EMP3"
+					},
+					{
+						"custId": "933311469",
+						"addrTypeCd": "W",
+						"addrPrefSeqNbr": "3",
+						"addr1Txt": "55455 Lincoln Road",
+						"cityName": "Reston",
+						"stCd": "VA",
+						"zipCd": "20188",
+						"lastUpdtSrcCd": "050",
+						"lastUpdtDt": "SYSDATE",
+						"lastUpdtById": "EMP4"
+					}
+				],
+				"phone": [
+					{
+						"entryMethodCd": "1",
+						"phonePrefSeqNbr": "1",
+						"phoneTypeCd": "H",
+						"phoneAreaCdNbr": "281",
+						"phonePfxNbr": "281",
+						"phoneSfxNbr": "2812",
+						"lastUpdtSrcCd": "050",
+						"lastUpdtDt": "SYSDATE",
+						"lastUpdtById": "EMP5"
+					},
+					{
+						"entryMethodCd": "2",
+						"phonePrefSeqNbr": "2",
+						"phoneTypeCd": "M",
+						"phoneAreaCdNbr": "956",
+						"phonePfxNbr": "554",
+						"phoneSfxNbr": "8888",
+						"lastUpdtSrcCd": "050",
+						"lastUpdtDt": "SYSDATE",
+						"lastUpdtById": "EMP6"
+					},
+					{
+						"entryMethodCd": "3",
+						"phonePrefSeqNbr": "3",
+						"phoneTypeCd": "U",
+						"phoneAreaCdNbr": "892",
+						"phonePfxNbr": "666",
+						"phoneSfxNbr": "3344",
+						"lastUpdtSrcCd": "050",
+						"lastUpdtDt": "SYSDATE",
+						"lastUpdtById": "EMP7"
+					}
+				],
+				"email": [
+					{
+						"emailPrefSeqNbr": "1",
+						"emailAddrTypeCd": "H",
+						"emailAddrTxt": "anurag1@cvs.com",
+						"emailStatusCd": "A",
+						"lastUpdtSrcCd": "050",
+						"lastUpdtById": "EMP8",
+						"lastUpdtDt": "SYSDATE"
+					},
+					{
+						"emailPrefSeqNbr": "2",
+						"emailAddrTypeCd": "U",
+						"emailAddrTxt": "anurag53@gmail.com",
+						"emailStatusCd": "R",
+						"lastUpdtSrcCd": "050",
+						"lastUpdtById": "EMP9",
+						"lastUpdtDt": "SYSDATE"
+					},
+					{
+						"emailPrefSeqNbr": "3",
+						"emailAddrTypeCd": "W",
+						"emailAddrTxt": "anuragreddy123@icloud.com",
+						"emailStatusCd": "Y",
+						"lastUpdtSrcCd": "050",
+						"lastUpdtById": "EMP10",
+						"lastUpdtDt": "SYSDATE"
+					}
+				],
+				"opt": [
+					{
+						"optTypeCd": "32",
+						"optCd": "O",
+						"optSrcCd": "C",
+						"lastUpdtSrcCd": "050",
+						"lastUpdtDt": "sysdate",
+						"lastUpdtById": "EMP11"
+					},
+					{
+						"optTypeCd": "29",
+						"optCd": "I",
+						"optSrcCd": "C",
+						"lastUpdtSrcCd": "052",
+						"lastUpdtDt": "sysdate",
+						"lastUpdtById": "EMP12"
+					},
+					{
+						"optTypeCd": "27",
+						"optCd": "Y",
+						"optSrcCd": "C",
+						"lastUpdtSrcCd": "052",
+						"lastUpdtDt": "sysdate",
+						"lastUpdtById": "EMP13"
+					}
+				],
+				"xtraCardNbr": 8875511,
+				"encodedXtraCardNbr": 4872887551111
+			}
+		],
+		"tc01_setcust_insert_customer": [
+			{
+				"custId": "933311469",
+				"gndrCd": "M",
+				"firstName": "Anurag",
+				"middleInitialTxt": "R",
+				"lastName": "Reddy",
+				"surName": "JR",
+				"pfxTxt": "MR",
+				"birthDt": "2021-NOV-12",
+				"ssn": "123456789",
+				"lastUpdtSrcCd": "050",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc01AutoTest"
+			}
+		],
+		"tc02_setcust_update_customer": [
+			{
+				"gndrCd": "M",
+				"firstName": "John",
+				"middleInitialTxt": "K",
+				"lastName": "Smith",
+				"surName": "SR",
+				"pfxTxt": "MR",
+				"birthDt": "2021-DEC-12",
+				"ssn": "987654321",
+				"lastUpdtSrcCd": "051",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc02AutoTest"
+			}
+		],
+		"tc03_setcust_update_customer_address": [
+			{
+				"custId": "933311469",
+				"addrTypeCd": "H",
+				"addrPrefSeqNbr": "1",
+				"addr1Txt": "123 Ranger St",
+				"addr2Txt": "Home 1",
+				"cityName": "Austin",
+				"stCd": "TX",
+				"zipCd": "78383",
+				"zipSfxNbr": "9999",
+				"addrQltyCd": "G",
+				"addrConfDt": "SYSDATE",
+				"entryMethodCd": "R",
+				"lastUpdtSrcCd": "052",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc03AutoTest"
+			}
+		],
+		"tc04_setcust_insert_customer_email": [
+			{
+				"emailPrefSeqNbr": "2",
+				"emailAddrTypeCd": "Z",
+				"emailStatusCd": "B",
+				"emailAddrTxt": "anurag@cvs.com",
+				"lastUpdtSrcCd": "053",
+				"lastUpdtDt": "sysdate",
+				"lastUpdtById": "tc04AutoTest",
+				"emailConfDt": "sysdate",
+				"entryMethodCd": "X",
+				"emailSrcCd": "X"
+			}
+		],
+		"tc05_setcust_update_customer_email": [
+			{
+				"emailPrefSeqNbr": "2",
+				"emailAddrTypeCd": "U",
+				"emailStatusCd": "R",
+				"emailAddrTxt": "anurag1@cvs.com",
+				"lastUpdtSrcCd": "055",
+				"lastUpdtDt": "sysdate",
+				"lastUpdtById": "tc05AutoTest",
+				"emailConfDt": "sysdate",
+				"entryMethodCd": "Y",
+				"emailSrcCd": "Y"
+			}
+		],
+		"tc06_setcust_insert_customer_email_without_emailAddrTxt": [
+			{
+				"emailPrefSeqNbr": "3",
+				"emailAddrTypeCd": "Z",
+				"emailStatusCd": "B",
+				"lastUpdtSrcCd": "056",
+				"lastUpdtDt": "sysdate",
+				"lastUpdtById": "tc06AutoTest",
+				"emailConfDt": "sysdate",
+				"entryMethodCd": "Z",
+				"emailSrcCd": "Z"
+			}
+		],
+		"tc07_setcust_insert_customer_opt": [
+			{
+				"optTypeCd": "38",
+				"optCd": "A",
+				"optSrcCd": "C",
+				"lastUpdtSrcCd": "057",
+				"lastUpdtDt": "sysdate",
+				"lastUpdtById": "tc07AutoTest"
+			}
+		],
+		"tc08_setcust_update_customer_opt": [
+			{
+				"optSrcCd": "C",
+				"optCd": "A",
+				"lastUpdtById": "tc08AutoTest"
+			}
+		],
+		"tc09_setcust_insert_customer_phone": [
+			{
+				"entryMethodCd": "1",
+				"phonePrefSeqNbr": "2",
+				"phoneTypeCd": "A",
+				"phoneAreaCdNbr": "283",
+				"phonePfxNbr": "281",
+				"phoneSfxNbr": "2812",
+				"lastUpdtSrcCd": "059",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc09AutoTest"
+			}
+		],
+		"tc10_setcust_update_customer_phone": [
+			{
+				"entryMethodCd": "2",
+				"phonePrefSeqNbr": "1",
+				"phoneTypeCd": "A",
+				"phoneAreaCdNbr": "283",
+				"phonePfxNbr": "282",
+				"phoneSfxNbr": "2813",
+				"lastUpdtSrcCd": "060",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc10AutoTest"
+			}
+		],
+		"tc11_setcust_insert_customer_phone_without_phonePfxNbr": [
+			{
+				"entryMethodCd": "3",
+				"phonePrefSeqNbr": "3",
+				"phoneTypeCd": "U",
+				"phoneAreaCdNbr": "999",
+				"phoneSfxNbr": "9999",
+				"lastUpdtSrcCd": "061",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc11AutoTest"
+			}
+		],
+		"tc12_setcust_insert_customer_phone_without_phoneSfxNbr": [
+			{
+				"entryMethodCd": "4",
+				"phonePrefSeqNbr": "4",
+				"phoneTypeCd": "U",
+				"phoneAreaCdNbr": "999",
+				"phonePfxNbr": "999",
+				"lastUpdtSrcCd": "061",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc12AutoTest"
+			}
+		],
+		"tc13_setcust_insert_customer_phone_without_phoneAreaCdNbr": [
+			{
+				"entryMethodCd": "2",
+				"phonePrefSeqNbr": "5",
+				"phoneTypeCd": "U",
+				"phonePfxNbr": "999",
+				"phoneSfxNbr": "9999",
+				"lastUpdtSrcCd": "062",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc13AutoTest"
+			}
+		],
+		"tc14_setcust_update_xtra_card_child": [
+			{
+				"birthdayDt": "SYSDATE",
+				"lastUpdtSrcCd": "063",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc14AutoTest"
+			}
+		],
+		"tc15_setcust_insert_xtra_card_child": [
+			{
+				"birthdayDt": "SYSDATE",
+				"lastUpdtSrcCd": "064",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc15AutoTest"
+			}
+		],
+		"tc16_setcust_update_xtra_card_wellness_info": [
+			{
+				"wellnessInfoCd": "1",
+				"lastUpdtSrcCd": "065",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc16AutoTest"
+			}
+		],
+		"tc17_setcust_insert_xtra_card_wellness_info": [
+			{
+				"wellnessInfoCd": "3",
+				"lastUpdtSrcCd": "066",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc17AutoTest"
+			}
+		],
+		"tc18_setcust_update_xtra_card_selected_category": [
+			{
+				"selCatSeqNbr": "1",
+				"selCatNbr": "1"
+			}
+		],
+		"tc19_setcust_insert_xtra_card_selected_category": [
+			{
+				"selCatSeqNbr": "2",
+				"selCatNbr": "2"
+			}
+		],
+		"tc20_setcust_insert_xtra_customer": [
+			{
+				"cardStatCd": "A",
+				"hhCnt": "1",
+				"custFavCatNbr": "1",
+				"custFavWiCd": "1",
+				"lastUpdtSrcCd": "067",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc20AutoTest"
+			}
+		],
+		"tc21_setcust_update_xtra_customer": [
+			{
+				"custStatCd": "B",
+				"hhCnt": "2",
+				"custFavCatNbr": "2",
+				"custFavWiCd": "2",
+				"lastUpdtSrcCd": "068",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc21AutoTest"
+			}
+		],
+		"tc22_setcust_update_xtra_customer_with_cust_stat_updt_dt": [
+			{
+				"custStatCd": "C",
+				"custStatUpdtDt": "SYSDATE",
+				"hhCnt": "3",
+				"custFavCatNbr": "3",
+				"custFavWiCd": "3",
+				"lastUpdtSrcCd": "069",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc22AutoTest"
+			}
+		],
+		"tc23_setcust_update_xtra_customer_with_head_of_hh_ind": [
+			{
+				"custStatCd": "D",
+				"headOfHhInd": "Y",
+				"hhCnt": "4",
+				"custFavCatNbr": "4",
+				"custFavWiCd": "4",
+				"lastUpdtSrcCd": "070",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc23AutoTest"
+			}
+		],
+		"tc24_setcust_update_xtra_customer_with_hh_nbr": [
+			{
+				"custStatCd": "E",
+				"hhNbr": "5",
+				"hhCnt": "5",
+				"custFavCatNbr": "5",
+				"custFavWiCd": "5",
+				"lastUpdtSrcCd": "071",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc24AutoTest"
+			}
+		],
+		"tc25_setcust_update_xtra_customer_with_recruit_criteria_cd": [
+			{
+				"custStatCd": "F",
+				"recruitCriteriaCd": "6",
+				"hhCnt": "6",
+				"custFavCatNbr": "6",
+				"custFavWiCd": "6",
+				"lastUpdtSrcCd": "072",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc25AutoTest"
+			}
+		],
+		"tc26_setcust_update_xtra_customer_with_cust_id": [
+			{
+				"custStatCd": "G",
+				"custId": "1234567",
+				"hhCnt": "7",
+				"custFavCatNbr": "7",
+				"custFavWiCd": "7",
+				"lastUpdtSrcCd": "073",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc26AutoTest"
+			}
+		],
+		"tc27_setcust_insert_xtra_card": [
+			{
+				"trgtGeoMktCd": "1",
+				"cardStatCd": "A",
+				"encodedXtraCardNbr": "1",
+				"lastUpdtSrcCd": "074",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc27AutoTest"
+			}
+		],
+		"tc28_setcust_update_xtra_card": [
+			{
+				"trgtGeoMktCd": "2",
+				"cardStatCd": "B",
+				"encodedXtraCardNbr": "2",
+				"lastUpdtSrcCd": "075",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc28AutoTest"
+			}
+		],
+		"tc29_setcust_update_xtra_card_with_xtra_card_nbr": [
+			{
+				"xtraCardNbr": "101010",
+				"trgtGeoMktCd": "3",
+				"cardStatCd": "C",
+				"encodedXtraCardNbr": "3",
+				"lastUpdtSrcCd": "076",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc29AutoTest"
+			}
+		],
+		"tc30_setcust_update_xtra_card_with_cust_id": [
+			{
+				"custId": "101010",
+				"trgtGeoMktCd": "4",
+				"cardStatCd": "D",
+				"encodedXtraCardNbr": "4",
+				"lastUpdtSrcCd": "077",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc30AutoTest"
+			}
+		],
+		"tc31_setcust_update_xtra_card_with_card_first_scan_dt": [
+			{
+				"cardFirstScanDt": "SYSDATE",
+				"trgtGeoMktCd": "5",
+				"cardStatCd": "E",
+				"encodedXtraCardNbr": "5",
+				"lastUpdtSrcCd": "078",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc31AutoTest"
+			}
+		],
+		"tc32_setcust_update_xtra_card_with_tot_lifetime_visit_cnt": [
+			{
+				"totLifetimeVisitCnt": "6",
+				"trgtGeoMktCd": "6",
+				"cardStatCd": "F",
+				"encodedXtraCardNbr": "6",
+				"lastUpdtSrcCd": "079",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc32AutoTest"
+			}
+		],
+		"tc33_setcust_update_xtra_card_with_referred_by_cd": [
+			{
+				"referredByCd": "7",
+				"trgtGeoMktCd": "7",
+				"cardStatCd": "G",
+				"encodedXtraCardNbr": "7",
+				"lastUpdtSrcCd": "080",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc33AutoTest"
+			}
+		],
+		"tc34_setcust_update_xtra_card_with_rank_cd": [
+			{
+				"rankCd": "A",
+				"trgtGeoMktCd": "8",
+				"cardStatCd": "H",
+				"encodedXtraCardNbr": "8",
+				"lastUpdtSrcCd": "081",
+				"lastUpdtDt": "SYSDATE",
+				"lastUpdtById": "tc34AutoTest"
+			}
+		],
+		"tc35_setcust_insert_fsa_dtl_request": [
+			{
+				"reqDt": "SYSDATE",
+                "startDt": "SYSDATE",
+                "endDt": "SYSDATE",
+                "emailAddrTxt": "anurag@cvs.com",
+                "procDt": "SYSDATE",
+                "undelivInd": "N"
+			}
+		],
+		"tc36_setcust_update_fsa_dtl_request": [
+			{
+				"reqDt": "SYSDATE",
+                "startDt": "SYSDATE",
+                "endDt": "SYSDATE",
+                "emailAddrTxt": "anurag1@cvs.com",
+                "procDt": "SYSDATE",
+                "undelivInd": "Y"
+			}
+		],
+		"tc37_setcust_insert_xtra_card_coupon_pending_chng": [
+			{
+				"cpnSeqNbr": "123456654321",
+				"lastUpdtTs": "SYSDATE",
+                "lastUpdtById": "tc37AutoTest",
+                "reprntCd": "Y"
+			}
+		],
+		"tc38_setcust_update_xtra_card_coupon_pending_chng": [
+			{
+				"cpnSeqNbr": "123456654322",
+				"lastUpdtTs": "SYSDATE",
+                "lastUpdtById": "tc38AutoTest",
+                "reprntCd": "Y"
+			}
+		],
+		"tc39_setcust_insert_xtra_privacy_request": [
+			{
+				"rqstDt": "SYSDATE",
+                "purgeRqstInd": "Y",
+                "rptRqstInd": "N",
+                "firstUpdtSrcCd": "044",
+                "firstUpdtById": "tc39AutoTest",
+                "firstUpdtDt": "SYSDATE",
+                "lastUpdtSrcCd": "044",
+                "lastUpdtById": "tc39AutoTest",
+                "lastUpdtDt": "SYSDATE",
+                "rptDestIsCcInd": "Y",
+                "rptDestEmailAddrTxt": "anurag@gmail.com",
+                "rptRqstRefCd": "B",
+                "rptRqstRefCdSentDt": "SYSDATE",
+                "rptGenDt": "SYSDATE",
+                "oltpPurgeProcDt": "SYSDATE",
+                "dwPurgeProcDt": "SYSDATE",
+                "cdpOltpPurgeProcDt": "SYSDATE"
+			}
+		],
+		"tc40_setcust_insert_xtra_privacy_request_without_rqst_dt": [
+			{
+                "purgeRqstInd": "Y",
+                "rptRqstInd": "N",
+                "firstUpdtSrcCd": "045",
+                "firstUpdtById": "tc40AutoTest",
+                "firstUpdtDt": "SYSDATE",
+                "lastUpdtSrcCd": "045",
+                "lastUpdtById": "tc40AutoTest",
+                "lastUpdtDt": "SYSDATE",
+                "rptDestIsCcInd": "N",
+                "rptDestEmailAddrTxt": "anurag1@gmail.com",
+                "rptRqstRefCd": "A",
+                "rptRqstRefCdSentDt": "SYSDATE",
+                "rptGenDt": "SYSDATE",
+                "oltpPurgeProcDt": "SYSDATE",
+                "dwPurgeProcDt": "SYSDATE",
+                "cdpOltpPurgeProcDt": "SYSDATE"
+			}
+		],
+		"tc41_setcust_insert_xtra_privacy_request_without_purge_rqst_ind": [
+			{
+				"rqstDt": "SYSDATE",
+                "rptRqstInd": "N",
+                "firstUpdtSrcCd": "046",
+                "firstUpdtById": "tc41AutoTest",
+                "firstUpdtDt": "SYSDATE",
+                "lastUpdtSrcCd": "046",
+                "lastUpdtById": "tc41AutoTest",
+                "lastUpdtDt": "SYSDATE",
+                "rptDestIsCcInd": "Y",
+                "rptDestEmailAddrTxt": "anurag2@gmail.com",
+                "rptRqstRefCd": "B",
+                "rptRqstRefCdSentDt": "SYSDATE",
+                "rptGenDt": "SYSDATE",
+                "oltpPurgeProcDt": "SYSDATE",
+                "dwPurgeProcDt": "SYSDATE",
+                "cdpOltpPurgeProcDt": "SYSDATE"
+			}
+		],
+		"tc42_setcust_insert_xtra_privacy_request_without_rpt_rqst_ind": [
+			{
+				"rqstDt": "SYSDATE",
+                "purgeRqstInd": "Y",
+                "firstUpdtSrcCd": "047",
+                "firstUpdtById": "tc42AutoTest",
+                "firstUpdtDt": "SYSDATE",
+                "lastUpdtSrcCd": "047",
+                "lastUpdtById": "tc42AutoTest",
+                "lastUpdtDt": "SYSDATE",
+                "rptDestIsCcInd": "Y",
+                "rptDestEmailAddrTxt": "anurag@gmail.com",
+                "rptRqstRefCd": "B",
+                "rptRqstRefCdSentDt": "SYSDATE",
+                "rptGenDt": "SYSDATE",
+                "oltpPurgeProcDt": "SYSDATE",
+                "dwPurgeProcDt": "SYSDATE",
+                "cdpOltpPurgeProcDt": "SYSDATE"
+			}
+		],
+		"tc43_setcust_insert_xtra_privacy_request_without_first_updt_src_cd": [
+			{
+				"rqstDt": "SYSDATE",
+                "purgeRqstInd": "Y",
+                "rptRqstInd": "N",
+                "firstUpdtById": "tc43AutoTest",
+                "firstUpdtDt": "SYSDATE",
+                "lastUpdtSrcCd": "048",
+                "lastUpdtById": "tc43AutoTest",
+                "lastUpdtDt": "SYSDATE",
+                "rptDestIsCcInd": "Y",
+                "rptDestEmailAddrTxt": "anurag@gmail.com",
+                "rptRqstRefCd": "B",
+                "rptRqstRefCdSentDt": "SYSDATE",
+                "rptGenDt": "SYSDATE",
+                "oltpPurgeProcDt": "SYSDATE",
+                "dwPurgeProcDt": "SYSDATE",
+                "cdpOltpPurgeProcDt": "SYSDATE"
+			}
+		],
+		"tc44_setcust_insert_xtra_privacy_request_without_first_updt_by_id": [
+			{
+				"rqstDt": "SYSDATE",
+                "purgeRqstInd": "Y",
+                "rptRqstInd": "N",
+                "firstUpdtSrcCd": "049",
+                "firstUpdtDt": "SYSDATE",
+                "lastUpdtSrcCd": "049",
+                "lastUpdtById": "tc44AutoTest",
+                "lastUpdtDt": "SYSDATE",
+                "rptDestIsCcInd": "Y",
+                "rptDestEmailAddrTxt": "anurag@gmail.com",
+                "rptRqstRefCd": "B",
+                "rptRqstRefCdSentDt": "SYSDATE",
+                "rptGenDt": "SYSDATE",
+                "oltpPurgeProcDt": "SYSDATE",
+                "dwPurgeProcDt": "SYSDATE",
+                "cdpOltpPurgeProcDt": "SYSDATE"
+			}
+		],
+		"tc45_setcust_insert_xtra_privacy_request_without_first_updt_dt": [
+			{
+				"rqstDt": "SYSDATE",
+                "purgeRqstInd": "Y",
+                "rptRqstInd": "N",
+                "firstUpdtSrcCd": "050",
+                "firstUpdtById": "tc45AutoTest",
+                "lastUpdtSrcCd": "050",
+                "lastUpdtById": "tc45AutoTest",
+                "lastUpdtDt": "SYSDATE",
+                "rptDestIsCcInd": "Y",
+                "rptDestEmailAddrTxt": "anurag@gmail.com",
+                "rptRqstRefCd": "B",
+                "rptRqstRefCdSentDt": "SYSDATE",
+                "rptGenDt": "SYSDATE",
+                "oltpPurgeProcDt": "SYSDATE",
+                "dwPurgeProcDt": "SYSDATE",
+                "cdpOltpPurgeProcDt": "SYSDATE"
+			}
+		],
+		"tc46_setcust_insert_xtra_privacy_request_without_last_updt_src_cd": [
+			{
+				"rqstDt": "SYSDATE",
+                "purgeRqstInd": "Y",
+                "rptRqstInd": "N",
+                "firstUpdtSrcCd": "051",
+                "firstUpdtById": "tc46AutoTest",
+                "firstUpdtDt": "SYSDATE",
+                "lastUpdtById": "tc46AutoTest",
+                "lastUpdtDt": "SYSDATE",
+                "rptDestIsCcInd": "Y",
+                "rptDestEmailAddrTxt": "anurag@gmail.com",
+                "rptRqstRefCd": "B",
+                "rptRqstRefCdSentDt": "SYSDATE",
+                "rptGenDt": "SYSDATE",
+                "oltpPurgeProcDt": "SYSDATE",
+                "dwPurgeProcDt": "SYSDATE",
+                "cdpOltpPurgeProcDt": "SYSDATE"
+			}
+		],
+		"tc47_setcust_insert_xtra_privacy_request_without_last_updt_by_id": [
+			{
+				"rqstDt": "SYSDATE",
+                "purgeRqstInd": "Y",
+                "rptRqstInd": "N",
+                "firstUpdtSrcCd": "052",
+                "firstUpdtById": "tc47AutoTest",
+                "firstUpdtDt": "SYSDATE",
+                "lastUpdtSrcCd": "052",
+                "lastUpdtDt": "SYSDATE",
+                "rptDestIsCcInd": "Y",
+                "rptDestEmailAddrTxt": "anurag@gmail.com",
+                "rptRqstRefCd": "B",
+                "rptRqstRefCdSentDt": "SYSDATE",
+                "rptGenDt": "SYSDATE",
+                "oltpPurgeProcDt": "SYSDATE",
+                "dwPurgeProcDt": "SYSDATE",
+                "cdpOltpPurgeProcDt": "SYSDATE"
+			}
+		],
+		"tc48_setcust_insert_xtra_privacy_request_without_last_updt_dt": [
+			{
+				"rqstDt": "SYSDATE",
+                "purgeRqstInd": "Y",
+                "rptRqstInd": "N",
+                "firstUpdtSrcCd": "053",
+                "firstUpdtById": "tc48AutoTest",
+                "firstUpdtDt": "SYSDATE",
+                "lastUpdtSrcCd": "053",
+                "lastUpdtById": "tc48AutoTest",
+                "rptDestIsCcInd": "Y",
+                "rptDestEmailAddrTxt": "anurag@gmail.com",
+                "rptRqstRefCd": "B",
+                "rptRqstRefCdSentDt": "SYSDATE",
+                "rptGenDt": "SYSDATE",
+                "oltpPurgeProcDt": "SYSDATE",
+                "dwPurgeProcDt": "SYSDATE",
+                "cdpOltpPurgeProcDt": "SYSDATE"
+			}
+		],
+		"tc49_setcust_insert_xtra_privacy_request_with_rpt_mailed_conf_name": [
+			{
+				"rqstDt": "SYSDATE",
+                "purgeRqstInd": "Y",
+                "rptRqstInd": "N",
+                "firstUpdtSrcCd": "054",
+                "firstUpdtById": "tc49AutoTest",
+                "firstUpdtDt": "SYSDATE",
+                "lastUpdtSrcCd": "054",
+                "lastUpdtById": "tc49AutoTest",
+                "lastUpdtDt": "SYSDATE",
+                "rptDestIsCcInd": "Y",
+                "rptDestEmailAddrTxt": "anurag@gmail.com",
+                "rptRqstRefCd": "B",
+                "rptRqstRefCdSentDt": "SYSDATE",
+                "rptGenDt": "SYSDATE",
+                "oltpPurgeProcDt": "SYSDATE",
+                "dwPurgeProcDt": "SYSDATE",
+                "cdpOltpPurgeProcDt": "SYSDATE",
+                "rptMailedConfName": "Anurag"
+			}
+		],
+		"tc50_setcust_insert_xtra_privacy_request_with_rpt_mailed_conf_dt": [
+			{
+				"rqstDt": "SYSDATE",
+                "purgeRqstInd": "Y",
+                "rptRqstInd": "N",
+                "firstUpdtSrcCd": "055",
+                "firstUpdtById": "tc50AutoTest",
+                "firstUpdtDt": "SYSDATE",
+                "lastUpdtSrcCd": "055",
+                "lastUpdtById": "tc50AutoTest",
+                "lastUpdtDt": "SYSDATE",
+                "rptDestIsCcInd": "Y",
+                "rptDestEmailAddrTxt": "anurag@gmail.com",
+                "rptRqstRefCd": "B",
+                "rptRqstRefCdSentDt": "SYSDATE",
+                "rptGenDt": "SYSDATE",
+                "oltpPurgeProcDt": "SYSDATE",
+                "dwPurgeProcDt": "SYSDATE",
+                "cdpOltpPurgeProcDt": "SYSDATE",
+                "rptMailedConfDt": "SYSDATE"
+			}
+		]
+}

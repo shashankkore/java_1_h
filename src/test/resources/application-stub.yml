@@ -1,0 +1,23 @@
+logging:
+  level:
+    root: INFO
+
+spring:
+  profiles:
+    active: stub
+  datasource:
+    url: jdbc:oracle:thin:@rri2crmdda1.cvs.com:1521:crmod0
+    driver-class-name: oracle.jdbc.OracleDriver
+    hikari:
+      maximum-pool-size: 1
+      minimum-idle: 1
+
+services:
+  app-name: dashboard
+  base-url: http://localhost:8080/
+  rewardHistory-url: http://localhost:8080/
+  setcust-url: http://localhost:8080/
+  getcust-url: http://localhost:8080/
+  cpnapi-url: http://localhost:8080/
+  productapi-url: http://localhost:8080/
+  cmpgnEarn-url: https://localhost:8080/

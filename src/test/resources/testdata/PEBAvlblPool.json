@@ -1,0 +1,64 @@
+{
+    "tc01_pebavlbpool_one_record": {
+      "pebAvailPool": [
+        {
+          "cmpgnId": 44356,
+          "newInd": "N",
+          "endSoonInd": "false",
+          "cmpgnEndDt": "20181231",
+          "thrshldTypeCd": "D",
+          "webDsc": "Buy 3 Allergy Remedies and Get $10 ExtraBucks Rewards",
+          "cpnCats": [
+            {
+              "cpnCatNbr": 6,
+              "cpnCatDsc": "Personal Care"
+            }
+          ]
+        }
+      ]
+    },
+    "tc02_pebavlbpool_no_cpn_category": {
+      "pebAvailPool": [
+        {
+          "cmpgnId": 44356,
+          "newInd": "N",
+          "endSoonInd": "false",
+          "cmpgnEndDt": "20181231",
+          "thrshldTypeCd": "D",
+          "webDsc": "Buy 3 Allergy Remedies and Get $10 ExtraBucks Rewards"
+        }
+      ]
+    },
+    "tc03_pebavlbpool_multi_records": {
+      "pebAvailPool": [
+        {
+          "cmpgnId": 44356,
+          "newInd": "N",
+          "endSoonInd": "false",
+          "cmpgnEndDt": "20221231",
+          "thrshldTypeCd": "D",
+          "webDsc": "Buy 3 Allergy Remedies and Get $10 ExtraBucks Rewards",
+          "cpnCats": [
+            {
+              "cpnCatNbr": 6,
+              "cpnCatDsc": "Personal Care"
+            }
+          ]
+        },
+        {
+          "cmpgnId": 39557,
+          "newInd": "N",
+          "endSoonInd": "false",
+          "cmpgnEndDt": "20221231",
+          "thrshldTypeCd": "D",
+          "webDsc": "Buy 8 of any CeraVe or Garniere products and Get $4 ExtraBucks",
+          "cpnCats": [
+            {
+              "cpnCatNbr": 6,
+              "cpnCatDsc": "Personal Care"
+            }
+          ]
+        }
+      ]
+    }
+}

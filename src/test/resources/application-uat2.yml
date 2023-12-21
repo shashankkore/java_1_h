@@ -1,0 +1,30 @@
+logging:
+  level:
+    root: INFO
+
+spring:
+  profiles:
+    active: uat2
+  datasource:
+    url: jdbc:oracle:thin:@//rri2crmdul11-scan:1551/crmou2
+    driver-class-name: oracle.jdbc.OracleDriver
+    username: "C296002"
+    password: "Tm92IzIwMjM="
+    hikari:
+      maximum-pool-size: 1
+      minimum-idle: 1
+
+services:
+  app-name: dashboard
+  base-url: https://dashboard-uat2.crmapitest.cvshealthcloud.com/
+  setcust-url: https://setcust-uat2.crmapitest.cvshealthcloud.com/
+  getcust-url: https://customers-uat2.crmapitest.cvshealthcloud.com/
+  cmpgnEarn-url: https://cmpgnEarn-uat2.crmapitest.cvshealthcloud.com/
+  rewardHistory-url: https://rewardhistory-uat2.crmapitest.cvshealthcloud.com/
+  cmpgndefn-url: https://cmpgndefn-uat2.crmapitest.cvshealthcloud.com/
+  cpnapi-url: https://cpn-uat2.crmapitest.cvshealthcloud.com/
+  productapi-url: https://products-uat2.crmapitest.cvshealthcloud.com/
+  dataapi-url: https://data-uat2.crmapitest.cvshealthcloud.com/
+  custsearch-url: https://customersearch-uat2.crmapitest.cvshealthcloud.com/
+  hrenroll-url: https://hrenroll-uat2.crmapitest.cvshealthcloud.com/
+  hrevents-url: https://hrevents-uat2.crmapitest.cvshealthcloud.com/

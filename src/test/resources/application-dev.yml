@@ -1,0 +1,29 @@
+logging:
+  level:
+    root: INFO
+
+spring:
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:oracle:thin:@rri2crmdda1.cvs.com:1521:crmod0
+    driver-class-name: oracle.jdbc.OracleDriver
+    username: ${orclID}
+    password: ${orclPwd}
+    hikari:
+      maximum-pool-size: 1
+      minimum-idle: 1
+
+services:
+  app-name: dashboard
+  base-url: https://dashboard-dev1.crmapitest.cvshealthcloud.com/
+  setcust-url: https://setcust-dev1.crmapitest.cvshealthcloud.com/
+  getcust-url: https://customers-dev1.crmapitest.cvshealthcloud.com/
+  cmpgnEarn-url: https://cmpgnEarn-dev1.crmapitest.cvshealthcloud.com/
+  rewardHistory-url: https://rewardhistory-dev1.crmapitest.cvshealthcloud.com/
+  cmpgndefn-url: https://cmpgndefn-dev1.crmapitest.cvshealthcloud.com/
+  cpnapi-url: https://cpn-dev1.crmapitest.cvshealthcloud.com/
+  productapi-url: https://products-dev1.crmapitest.cvshealthcloud.com/
+  dataapi-url: https://data-dev1.crmapitest.cvshealthcloud.com/
+
+

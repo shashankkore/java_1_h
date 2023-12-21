@@ -1,0 +1,13 @@
+package com.cvs.crm.model.response;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
+
+import java.util.List;
+
+@Data
+public class DataSetupResponse {
+    String apiName;
+    @JsonProperty(value = "automationData")
+    List<dataResponse> dataResponseList;
+}

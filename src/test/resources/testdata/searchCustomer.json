@@ -1,0 +1,497 @@
+{
+    "11customer_onerecord_each": [
+      {
+        "custId": 11111,
+        "firstName": "Vikas Jr.",
+        "lastName": "Test's Test11",
+        "addresses": [
+          {
+            "addrTypeCd": "H",
+            "addr1Txt": "295 John St1",
+            "addr2Txt": "autoTest",
+            "cityName": "Iola",
+            "stCd": "WI",
+            "zipCd": "54945",
+            "addrPrefSeqNbr": 1
+          }
+        ],
+        "phone": [
+          {
+            "phoneTypeCd": "H",
+            "phoneAreaCdNbr": 881,
+            "phonePfxNbr": 111,
+            "phoneSfxNbr": 1111,
+            "phonePrefSeqNbr": 1
+          }
+        ],
+        "email": [
+          {
+            "emailAddrTxt": "exactmatchtest11_1@CVS.COM",
+            "emailPrefSeqNbr": 1,
+            "emailStatusCd": "A"
+          }
+        ],
+        "xtraCardNbr": 22211111,
+        "encodedXtraCardNbr": 4872123456111,
+        "xtraCardSh2Nbr": "dccf6929757962e6ce098e7a1055db051f047c2f366ee75c26b12efb8e211111",
+        "xtraCardSh1Nbr": "111sh112347962e6ce098e7a1055db051f047c2f36611111"
+      }
+    ],
+    "22customer_unique_multiple_records": [
+      {
+        "custId": 11122,
+        "firstName": "Vikas22",
+        "lastName": "Test",
+        "addresses": [
+          {
+            "addr1Txt": "37 WALL",
+            "addr2Txt": "autoTest",
+            "cityName": "BRISTOL",
+            "stCd": "RI",
+            "zipCd": "02809",
+            "addrPrefSeqNbr": 1
+          },
+          {
+            "addr1Txt": "1190 SCHULTE HILL RD #A",
+            "addr2Txt": "autoTest",
+            "cityName": "MARYLAND HEIGHTS",
+            "stCd": "MO",
+            "zipCd": "63043",
+            "addrPrefSeqNbr": 2
+          },
+          {
+            "addr1Txt": "121 CRYSTAL CREEK RD",
+            "addr2Txt": "PO BOX 121",
+            "cityName": "WENTZ Ville",
+            "stCd": "MO",
+            "zipCd": "63052",
+            "addrPrefSeqNbr": 3
+          }
+        ],
+        "phone": [
+          {
+            "phoneAreaCdNbr": 882,
+            "phonePfxNbr": 201,
+            "phoneSfxNbr": 2201,
+            "phonePrefSeqNbr": 1
+          },
+          {
+            "phoneAreaCdNbr": 882,
+            "phonePfxNbr": 202,
+            "phoneSfxNbr": 2202,
+            "phonePrefSeqNbr": 2
+          },
+          {
+            "phoneAreaCdNbr": 882,
+            "phonePfxNbr": 203,
+            "phoneSfxNbr": 2203,
+            "phonePrefSeqNbr": 3
+          },
+          {
+            "phoneAreaCdNbr": 882,
+            "phonePfxNbr": 204,
+            "phoneSfxNbr": 2204,
+            "phonePrefSeqNbr": 4
+          }
+        ],
+        "email": [
+          {
+            "emailAddrTxt": "exactmatchtest22_1@CVS.COM",
+            "emailPrefSeqNbr": 1
+          },
+          {
+            "emailAddrTxt": "exactmatchtest22_2@CVS.COM",
+            "emailPrefSeqNbr": 2
+          },
+          {
+            "emailAddrTxt": "exactmatchtest22_3@CVS.COM",
+            "emailPrefSeqNbr": 3
+          },
+          {
+            "emailAddrTxt": "exactmatchtest22_4@CVS.COM",
+            "emailPrefSeqNbr": 4
+          }
+        ],
+        "xtraCardNbr": 22211122,
+        "encodedXtraCardNbr": 4872222111221,
+        "xtraCardSh2Nbr": "dccf6929757962e6ce098e7a1055db051f047c2f366ee75c26b12efb8e211122",
+        "xtraCardSh1Nbr": "111sh112347962e6ce098e7a1055db051f047c2f36611122"
+      }
+    ],
+    "33customer_duplicate_phone_records": [
+      {
+        "custId": 11133,
+        "firstName": "Vikas33",
+        "lastName": "Test33",
+        "addresses": [
+          {
+            "addr1Txt": "730 County Rd #193",
+            "addr2Txt": "autoTest",
+            "cityName": "Waterloo",
+            "stCd": "AL",
+            "zipCd": "35677",
+            "addrPrefSeqNbr": 1
+          }
+        ],
+        "phone": [
+          {
+            "phoneAreaCdNbr": 883,
+            "phonePfxNbr": 211,
+            "phoneSfxNbr": 3301,
+            "phonePrefSeqNbr": 1
+          },
+          {
+            "phoneAreaCdNbr": 883,
+            "phonePfxNbr": 222,
+            "phoneSfxNbr": 3302,
+            "phonePrefSeqNbr": 2
+          },
+          {
+            "phoneAreaCdNbr": 883,
+            "phonePfxNbr": 211,
+            "phoneSfxNbr": 3301,
+            "phonePrefSeqNbr": 3
+          },
+          {
+            "phoneAreaCdNbr": 883,
+            "phonePfxNbr": 244,
+            "phoneSfxNbr": 3304,
+            "phonePrefSeqNbr": 4
+          },
+          {
+            "phoneAreaCdNbr": 883,
+            "phonePfxNbr": 211,
+            "phoneSfxNbr": 3301,
+            "phonePrefSeqNbr": 5
+          },
+          {
+            "phoneAreaCdNbr": 883,
+            "phonePfxNbr": 222,
+            "phoneSfxNbr": 3302,
+            "phonePrefSeqNbr": 6
+          }
+        ],
+        "email": [
+          {
+            "emailAddrTxt": "exactmatchtest33_1@CVS.COM",
+            "emailPrefSeqNbr": 1
+          },
+          {
+            "emailAddrTxt": "exactmatchtest33_2@CVS.COM",
+            "emailPrefSeqNbr": 2
+          }
+        ],
+        "xtraCardNbr": 22211133,
+        "encodedXtraCardNbr": 4872222111331,
+        "xtraCardSh2Nbr": "dccf6929757962e6ce098e7a1055db051f047c2f366ee75c26b12efb8e211133",
+        "xtraCardSh1Nbr": "111sh112347962e6ce098e7a1055db051f047c2f36611133"
+      }
+    ],
+    "44customer_duplicate_email_records": [
+      {
+        "custId": 11144,
+        "firstName": "Vikas44",
+        "lastName": "Test44",
+        "addresses": [
+          {
+            "addr1Txt": "1120 E Birchwood Dr",
+            "addr2Txt": "autoTest",
+            "cityName": "Nashville",
+            "stCd": "NC",
+            "zipCd": "27856",
+            "addrPrefSeqNbr": 1
+          }
+        ],
+        "phone": [
+          {
+            "phoneAreaCdNbr": 884,
+            "phonePfxNbr": 211,
+            "phoneSfxNbr": 4401,
+            "phonePrefSeqNbr": 1
+          },
+          {
+            "phoneAreaCdNbr": 884,
+            "phonePfxNbr": 222,
+            "phoneSfxNbr": 4402,
+            "phonePrefSeqNbr": 2
+          }
+        ],
+        "email": [
+          {
+            "emailAddrTxt": "exactmatchtest44_1@CVS.COM",
+            "emailPrefSeqNbr": 1
+          },
+          {
+            "emailAddrTxt": "exactmatchtest44_2@CVS.COM",
+            "emailPrefSeqNbr": 2
+          },
+          {
+            "emailAddrTxt": "exactmatchtest44_2@CVS.COM",
+            "emailPrefSeqNbr": 3
+          }
+        ],
+        "xtraCardNbr": 22211144,
+        "encodedXtraCardNbr": 4872222111441,
+        "xtraCardSh2Nbr": "dccf6929757962e6ce098e7a1055db051f047c2f366ee75c26b12efb8e211144",
+        "xtraCardSh1Nbr": "111sh112347962e6ce098e7a1055db051f047c2f36611144"
+      }
+    ],
+    "55customer_with_phone_address_record_only": [
+      {
+        "custId": 11155,
+        "firstName": "Vikas55",
+        "lastName": "Test55",
+        "addresses": [
+          {
+            "addr1Txt": "414 N Sherwood",
+            "addr2Txt": "autoTest",
+            "cityName": "White Oak",
+            "stCd": "TX",
+            "zipCd": "75693",
+            "addrPrefSeqNbr": 1
+          }
+        ],
+        "phone": [
+          {
+            "phoneAreaCdNbr": 885,
+            "phonePfxNbr": 551,
+            "phoneSfxNbr": 5501,
+            "phonePrefSeqNbr": 1
+          }
+        ],
+        "xtraCardNbr": 22211155,
+        "encodedXtraCardNbr": 4872222111551,
+        "xtraCardSh2Nbr": "dccf6929757962e6ce098e7a1055db051f047c2f366ee75c26b12efb8e211155",
+        "xtraCardSh1Nbr": "111sh112347962e6ce098e7a1055db051f047c2f36611155"
+      }
+    ],
+    "66customer_with_email_address_record_only": [
+      {
+        "custId": 11166,
+        "firstName": "Vikas66",
+        "lastName": "Test66",
+        "addresses": [
+          {
+            "addr1Txt": "202 Denver Ln",
+            "addr2Txt": "autoTest",
+            "cityName": "Benton",
+            "stCd": "KY",
+            "zipCd": "42025",
+            "addrPrefSeqNbr": 1
+          }
+        ],
+        "email": [
+          {
+            "emailAddrTxt": "exactmatchtest66_1@CVS.COM",
+            "emailPrefSeqNbr": 1
+          }
+        ],
+        "xtraCardNbr": 22211166,
+        "encodedXtraCardNbr": 4872222111661,
+        "xtraCardSh2Nbr": "dccf6929757962e6ce098e7a1055db051f047c2f366ee75c26b12efb8e211166",
+        "xtraCardSh1Nbr": "111sh112347962e6ce098e7a1055db051f047c2f36611166"
+      }
+    ],
+    "77customer_closematch": [
+      {
+        "custId": 111771,
+        "firstName": "Vikas Jr771",
+        "lastName": "Test77",
+        "addresses": [
+          {
+            "addr1Txt": "181 Dodge Ave #771",
+            "addr2Txt": "autoTest",
+            "cityName": "Corning",
+            "stCd": "NY",
+            "zipCd": "14830",
+            "addrPrefSeqNbr": 1
+          }
+        ],
+        "phone": [
+          {
+            "phoneAreaCdNbr": 887,
+            "phonePfxNbr": 701,
+            "phoneSfxNbr": 7701,
+            "phonePrefSeqNbr": 1
+          },
+          {
+            "phoneAreaCdNbr": 887,
+            "phonePfxNbr": 702,
+            "phoneSfxNbr": 7702,
+            "phonePrefSeqNbr": 2
+          }
+        ],
+        "email": [
+          {
+            "emailAddrTxt": "closematchtest1@CVS.COM",
+            "emailPrefSeqNbr": 1
+          },
+          {
+            "emailAddrTxt": "closematchtest2@CVS.COM",
+            "emailPrefSeqNbr": 2
+          },
+          {
+            "emailAddrTxt": "closematchtest3@CVS.COM",
+            "emailPrefSeqNbr": 3
+          }
+        ],
+        "xtraCardNbr": 222111771,
+        "encodedXtraCardNbr": 4872221117711,
+        "xtraCardSh2Nbr": "dccf6929757962e6ce098e7a1055db051f047c2f366ee75c26b12efb8e24771",
+        "xtraCardSh1Nbr": "111sh112347962e6ce098e7a1055db051f047c2f36644771"
+      },
+      {
+        "custId": 111772,
+        "firstName": "Vikas Jr772",
+        "lastName": "Test77",
+        "addresses": [
+          {
+            "addr1Txt": "181 Dodge Ave772",
+            "addr2Txt": "autoTest",
+            "cityName": "Corning",
+            "stCd": "NY",
+            "zipCd": "14830",
+            "addrPrefSeqNbr": 1
+          }
+        ],
+        "phone": [
+          {
+            "phoneAreaCdNbr": 887,
+            "phonePfxNbr": 701,
+            "phoneSfxNbr": 7701,
+            "phonePrefSeqNbr": 1
+          },
+          {
+            "phoneAreaCdNbr": 887,
+            "phonePfxNbr": 702,
+            "phoneSfxNbr": 7702,
+            "phonePrefSeqNbr": 2
+          }
+        ],
+        "email": [
+          {
+            "emailAddrTxt": "closematchtest1@CVS.COM",
+            "emailPrefSeqNbr": 1
+          },
+          {
+            "emailAddrTxt": "closematchtest2@CVS.COM",
+            "emailPrefSeqNbr": 2
+          },
+          {
+            "emailAddrTxt": "closematchtest3@CVS.COM",
+            "emailPrefSeqNbr": 3
+          }
+        ],
+        "xtraCardNbr": 222111772,
+        "encodedXtraCardNbr": 4872221117721,
+        "xtraCardSh2Nbr": "dccf6929757962e6ce098e7a1055db051f047c2f366ee75c26b12efb8e244772",
+        "xtraCardSh1Nbr": "111sh112347962e6ce098e7a1055db051f047c2f36644772"
+      }
+    ],
+    "88customer_nomatching_record": [
+      {
+        "custId": 111779,
+        "firstName": "Vikas779",
+        "lastName": "Test779",
+        "addresses": [
+          {
+            "addr1Txt": "730 Ct Rd1",
+            "addr2Txt": "autoTest1",
+            "cityName": "Waterloo1",
+            "stCd": "AL",
+            "zipCd": "35557",
+            "addrPrefSeqNbr": 1
+          },
+          {
+            "addr1Txt": "730 Ct Rd1",
+            "addr2Txt": "autoTest1",
+            "cityName": "Waterloo1",
+            "stCd": "AL",
+            "zipCd": "35557",
+            "addrPrefSeqNbr": 1
+          }
+        ],
+        "phone": [
+          {
+            "phoneAreaCdNbr": 888,
+            "phonePfxNbr": 222,
+            "phoneSfxNbr": 8888,
+            "phonePrefSeqNbr": 1
+          },
+          {
+            "phoneAreaCdNbr": 888,
+            "phonePfxNbr": 222,
+            "phoneSfxNbr": 8888,
+            "phonePrefSeqNbr": 1
+          }
+        ],
+        "email": [
+          {
+            "emailAddrTxt": "duptest33_1@CVS.COM",
+            "emailPrefSeqNbr": 1
+          },
+          {
+            "emailAddrTxt": "duptest33_1@CVS.COM",
+            "emailPrefSeqNbr": 1
+          }
+        ],
+        "xtraCardNbr": 22211888,
+        "encodedXtraCardNbr": 4872222111888,
+        "xtraCardSh2Nbr": "dccf6929757962e6ce098e7a1055db051f047c2f366ee75c26b12efb8e211888",
+        "xtraCardSh1Nbr": "111sh112347962e6ce098e7a1055db051f047c2f36611888"
+      }
+    ],
+    "88customer_nomatching_record2": [
+      {
+        "custId": 111987,
+        "firstName": "Vikas779",
+        "lastName": "Test779",
+        "addresses": [
+          {
+            "addr1Txt": "730 Ct Rd1",
+            "addr2Txt": "autoTest1",
+            "cityName": "Waterloo1",
+            "stCd": "AL",
+            "zipCd": "35557",
+            "addrPrefSeqNbr": 1
+          },
+          {
+            "addr1Txt": "730 Ct Rd1",
+            "addr2Txt": "autoTest1",
+            "cityName": "Waterloo1",
+            "stCd": "AL",
+            "zipCd": "35557",
+            "addrPrefSeqNbr": 1
+          }
+        ],
+        "phone": [
+          {
+            "phoneAreaCdNbr": 888,
+            "phonePfxNbr": 222,
+            "phoneSfxNbr": 8888,
+            "phonePrefSeqNbr": 1
+          },
+          {
+            "phoneAreaCdNbr": 888,
+            "phonePfxNbr": 222,
+            "phoneSfxNbr": 8888,
+            "phonePrefSeqNbr": 1
+          }
+        ],
+        "email": [
+          {
+            "emailAddrTxt": "duptest33_1@CVS.COM",
+            "emailPrefSeqNbr": 1
+          },
+          {
+            "emailAddrTxt": "duptest33_1@CVS.COM",
+            "emailPrefSeqNbr": 1
+          }
+        ],
+        "xtraCardNbr": 22211987,
+        "encodedXtraCardNbr": 4872222111987,
+        "xtraCardSh2Nbr": "dccf6929757962e6ce098e7a1055db051f047c2f366ee75c26b12efb8e211987",
+        "xtraCardSh1Nbr": "111sh112347962e6ce098e7a1055db051f047c2f36611987"
+      }
+    ]
+}

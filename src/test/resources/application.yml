@@ -1,0 +1,34 @@
+logging:
+  level:
+    root: INFO
+
+spring:
+  profiles:
+    active: uat1
+  datasource:
+    url: jdbc:oracle:thin:@//rri1crmdua3-scan:1521/crmos2_srvc1
+    driver-class-name: oracle.jdbc.OracleDriver
+    #username: ${orclID}
+    #password: ${orclPwd}
+    username: "C296002"
+    password: "RmViIzIwMjM="
+    hikari:
+      maximum-pool-size: 1
+      minimum-idle: 1
+
+services:
+  app-name: dashboard
+  base-url: https://dashboard-uat1.crmapitest.cvshealthcloud.com/
+  setcust-url: https://setcust-uat1.crmapitest.cvshealthcloud.com/
+  getcust-url: https://customers-uat1.crmapitest.cvshealthcloud.com/
+  cmpgnEarn-url: https://cmpgnEarn-uat1.crmapitest.cvshealthcloud.com/
+  rewardHistory-url: https://rewardhistory-uat1.crmapitest.cvshealthcloud.com/
+  cmpgndefn-url: https://cmpgndefn-uat1.crmapitest.cvshealthcloud.com/
+  cpnapi-url: https://cpn-uat1.crmapitest.cvshealthcloud.com/
+  productapi-url: https://products-uat1.crmapitest.cvshealthcloud.com/
+  dataapi-url: https://data-uat1.crmapitest.cvshealthcloud.com/
+  custsearch-url: https://customersearch-uat1.crmapitest.cvshealthcloud.com/
+  hrenroll-url: https://hrenroll-uat1.crmapitest.cvshealthcloud.com/
+  hrevents-url: https://hrevents-uat1.crmapitest.cvshealthcloud.com/
+  crmapi-url: https://crmapi-test.cvs.com/
+
